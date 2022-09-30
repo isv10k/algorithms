@@ -2,6 +2,7 @@ package com.isv10k.algorithms;
 
 import com.isv10k.algorithms.sorting.BubbleSort;
 import com.isv10k.algorithms.sorting.BubbleSortRecursive;
+import com.isv10k.algorithms.sorting.InsertionSort;
 import com.isv10k.algorithms.sorting.SelectionSort;
 
 import java.util.Arrays;
@@ -15,8 +16,9 @@ public class Main {
         SortingAlgorithm bubbleSort = new BubbleSort();
         SortingAlgorithm bubbleSortRecursive = new BubbleSortRecursive();
         SortingAlgorithm selectionSort = new SelectionSort();
+        SortingAlgorithm insertionSort = new InsertionSort();
 
-        checkAlgorithm(selectionSort);
+        checkAlgorithm(insertionSort);
 
 
     }
