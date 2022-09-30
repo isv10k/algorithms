@@ -23,10 +23,15 @@ public class Main {
 
     public static void checkAlgorithm(SortingAlgorithm alg) {
         int[] array = generateRandomArray(10, 0, 101);
+
+        System.out.println("Before sort:");
+        System.out.println(Arrays.toString(array));
+
         alg.sort(array);
 
         if (isSorted(array)) {
             System.out.println("Sorted");
+            System.out.println(Arrays.toString(array));
         } else {
             System.out.println("Sorting failed");
             System.out.println(Arrays.toString(array));
