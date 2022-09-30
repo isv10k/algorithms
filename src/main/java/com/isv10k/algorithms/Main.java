@@ -1,13 +1,10 @@
 package com.isv10k.algorithms;
 
-import com.isv10k.algorithms.sorting.BubbleSort;
-import com.isv10k.algorithms.sorting.BubbleSortRecursive;
-import com.isv10k.algorithms.sorting.InsertionSort;
-import com.isv10k.algorithms.sorting.SelectionSort;
+import com.isv10k.algorithms.sorting.*;
 
 import java.util.Arrays;
 
-import static com.isv10k.algorithms.util.Arrays.generateRandomArrayOfSize;
+import static com.isv10k.algorithms.util.Arrays.generateRandomArray;
 import static com.isv10k.algorithms.util.Arrays.isSorted;
 
 public class Main {
@@ -17,14 +14,15 @@ public class Main {
         SortingAlgorithm bubbleSortRecursive = new BubbleSortRecursive();
         SortingAlgorithm selectionSort = new SelectionSort();
         SortingAlgorithm insertionSort = new InsertionSort();
+        SortingAlgorithm quickSort = new QuickSort();
 
-        checkAlgorithm(insertionSort);
+        checkAlgorithm(quickSort);
 
 
     }
 
     public static void checkAlgorithm(SortingAlgorithm alg) {
-        int[] array = generateRandomArrayOfSize(10);
+        int[] array = generateRandomArray(10, 0, 101);
         alg.sort(array);
 
         if (isSorted(array)) {

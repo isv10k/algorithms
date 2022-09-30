@@ -3,12 +3,12 @@ package com.isv10k.algorithms.util;
 import java.util.Random;
 
 public class Arrays {
-    public static int[] generateRandomArrayOfSize(int size) {
+    public static int[] generateRandomArray(int size, int origin, int bound) {
         Random random = new Random();
         int[] randomArray = new int[size];
 
         for (int i = 0; i < size; i++) {
-            randomArray[i] = random.nextInt(0, 1001);
+            randomArray[i] = random.nextInt(origin, bound);
         }
         return randomArray;
     }
