@@ -16,8 +16,9 @@ public class Main {
         SortingAlgorithm insertionSort = new InsertionSort();
         SortingAlgorithm quickSort = new QuickSort();
         SortingAlgorithm mergeSort = new MergeSort();
+        SortingAlgorithm selectionSortRecursive = new SelectionSortRecursive();
 
-        checkAlgorithm(mergeSort);
+        checkAlgorithm(selectionSortRecursive);
 
 
     }
